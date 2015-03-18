@@ -3,7 +3,7 @@ using Sitecore;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 using Sitecore.Resources.Media;
-using Convert = System.Convert;
+
 
 namespace Paragon.Sitecore.Extensions.Media
 {
@@ -69,7 +69,7 @@ namespace Paragon.Sitecore.Extensions.Media
                 {
                     if (!String.IsNullOrEmpty(image.MediaItem["Size"]))
                     {
-                        var sizeInMb = Convert.ToDecimal(size) / 1000000;
+                        var sizeInMb = System.Convert.ToDecimal(size) / 1000000;
                         size = String.Format("{0:#.##}", sizeInMb) + "mb";
                     }
                 }

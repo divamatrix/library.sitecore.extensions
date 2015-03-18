@@ -14,7 +14,7 @@ namespace Paragon.Sitecore.Extensions.ItemExtensions
         /// </summary>
         /// <param name="itemId">string</param>
         /// <returns></returns>
-        private static Item GetItemById(string itemId)
+        public static Item GetItemById(string itemId)
         {
             Database db = Context.Database;
             return itemId != null ? db.GetItem(itemId) : null;

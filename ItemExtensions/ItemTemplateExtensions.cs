@@ -98,7 +98,7 @@ namespace Paragon.Sitecore.Extensions.ItemExtensions
         /// <param name="item">Item</param>
         /// <param name="baseTemplate">string</param>
         /// <returns></returns>
-        private static Item GetAncestorOrSelfByBaseTemplate(this Item item, string baseTemplate)
+        public static Item GetAncestorOrSelfByBaseTemplate(this Item item, string baseTemplate)
         {
             while (true)
             {

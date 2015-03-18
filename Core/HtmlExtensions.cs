@@ -9,7 +9,7 @@ namespace Paragon.Sitecore.Extensions.Core
     {
         public static string ToUnorderedList(string stringList, string cssClass, char separator)
         {
-            IEnumerable<string> listItems = null;
+            IEnumerable<string> listItems;
             try
             {
                 listItems = new List<string>(stringList.Split(separator).ToList());
